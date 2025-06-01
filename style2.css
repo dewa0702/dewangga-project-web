@@ -1,0 +1,334 @@
+       @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+        
+       
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F5F5F5;
+            color: #222;
+            line-height: 1.5;
+        }
+        a {
+            color: #F6353D;
+            text-decoration: none;
+            font-family: 'PT Sans Caption', sans-serif;
+        }
+        a:hover {
+            color: #f6353bab;
+        }
+        h3.title {
+            font-family: 'PT Sans Caption', sans-serif;
+            font-weight: bolder;
+            margin-bottom: 0.5rem;
+            color: #ac2429;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .location {
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .location i {
+            margin-right: 6px;
+            color: #F6353D;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 3rem auto;
+        }
+        .tourist-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 5rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        .tourist-row.reverse {
+            flex-direction: row-reverse;
+        }
+        .tourist-text, .tourist-image {
+            flex: 1 1 45%;
+            min-width: 280px;
+            padding: 1rem;
+        }
+        .tourist-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+        .tourist-image img:hover {
+            transform: scale(1.05);
+        }
+        .btn-read {
+            padding: 0.5rem 1.2rem;
+            background-color: #F6353D;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            margin-right: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-read:hover {
+            background-color: #ac2429;
+        }
+        .btn-photos {
+            background: none;
+            border: none;
+            color: #F6353D;
+            font-weight: bold;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 0;
+        }
+        .btn-photos i {
+            margin-left: 5px;
+        }
+        .gallery-image {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .img-box {
+            position: relative;
+            width: 350px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            cursor: pointer;
+            background: #fff;
+        }
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            border-radius: 15px;
+        }
+        .img-box:hover img {
+            transform: scale(1.1);
+        }
+        .transparent-box {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0);
+            transition: background-color 0.3s ease;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: left;
+            padding: 10px 20px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .img-box:hover .transparent-box {
+            background: rgba(0,0,0,0.5);
+        }
+        @media(max-width: 991px) {
+            .tourist-row {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .tourist-text, .tourist-image {
+                flex: none;
+                width: 100%;
+                padding: 0;
+                margin-bottom: 1rem;
+            }
+            .tourist-row.reverse {
+                flex-direction: column;
+            }
+            .img-box {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        .kuliner h1{
+            background-color: white;
+            border-radius: 20px;
+            font-family: "Poetsen One", sans-serif ;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-top: 100px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .kembali {
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 45px;
+            color: black; 
+            text-decoration: none;
+            transition: transform 0.5s;
+        }.kembali:hover {
+            transform: scale(1.2); 
+            color: #f1c40f; 
+        }
+       .maju {
+            margin-top: 10px;
+            margin-left: 1150px;
+            font-size: 45px; 
+            color: black; 
+            text-decoration: none;
+            transition: transform 0.5s;
+           
+        }
+
+        .maju:hover {
+            transform: scale(1.2);
+            color:  #f1c40f;
+        }
+        .kembalimaju{
+            display: flex;
+        }
+
+        .navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            background-color: rgba(44, 62, 80, 0.9); 
+            padding: 15px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            
+        }
+
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 23px;
+            transition: all 0.3 ease;
+             font-family: "Poetsen One", sans-serif;
+        }
+
+        .navigation a:hover,
+        .navigation a.active {
+            color: #ffc107;
+            border-bottom: 2px solid #ffc107;
+             letter-spacing: 1px;
+        }
+
+        .buku-tamu {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .buku-tamu h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-family: "Poetsen One", sans-serif;
+            font-size: 36px;
+        }
+
+        .buku-tamu label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .buku-tamu input,
+        .buku-tamu textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .buku-tamu button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            background-color: #ac2429;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .buku-tamu button:hover {
+            background-color: #881e22;
+        }
+
+         .menu {
+            background-color: white;
+            border-radius: 20px;
+            font-family: "Poetsen One", sans-serif ;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-top: 40px;
+            margin-right: 385px;
+            margin-left: 385px;
+        }
+
+        footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        font-size: 14px;
+        }
+
+        footer a {
+        color: #f1c40f;
+        text-decoration: none;
+        }
+
+        footer a:hover {
+        text-decoration: underline;
+        }
+
+        .social-icons {
+        margin-top: 10px;
+        }
+
+        .social-icons a {
+        margin: 0 10px;
+        font-size: 24px;
+        color: white;
+        transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+        color: #f1c40f;
+        }
+
+
